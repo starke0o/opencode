@@ -166,11 +166,11 @@ export const content = {
   },
   extensions: {
     browse: {
-      name: "Browse",
+      name: "browse",
       body: "让代理使用您真实的浏览器。",
-      title: "OpenCode | Browse，为编程代理准备的真实浏览器",
+      title: "OpenCode | browse，为编程代理准备的真实浏览器",
       description:
-        "Browse 让 OpenCode 和其他 MCP 客户端使用您真实的浏览器。代理通过 Playwright 操作后台标签页，并把登录和双重验证交还给您。",
+        "browse 让 OpenCode 和其他 MCP 客户端使用您真实的浏览器。代理通过 Playwright 操作后台标签页，并把登录和双重验证交还给您。",
       intro:
         "一个 MCP 服务器加一个 Chromium 扩展，让您的代理使用真实的浏览器，包括您的标签页、登录状态和扩展。代理通过 Playwright 打开和操作标签页、截图和录屏，这些标签页都在后台分组，不会打扰您。轮到您操作时，比如登录、双重验证或付款，代理会把标签页交还给您，您点击“继续”后它再接着工作。",
       features: {
@@ -190,7 +190,7 @@ export const content = {
         allowlists: { title: "允许列表", body: "将会话的标签页限制在您指定的网站内。" },
       },
       install:
-        "只需运行一次。它会把 browse MCP 服务器添加到您选择的代理中，并从 Chrome 网上应用店配对扩展。需要 Node.js 22.19 或更高版本。",
+        "一行命令安装 browse，把它添加到找到的代理并配对扩展。在 Windows 上运行 irm https://opencode.ai/browse/install.ps1 | iex。也可以让代理帮你设置。",
     },
   },
   apps: {

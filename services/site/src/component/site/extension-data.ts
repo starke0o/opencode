@@ -1,7 +1,6 @@
-// Extensions: things you add to OpenCode, listed on /product under the products, each with a light
-// page at /extensions/<slug>. Only real ones, with copy from their READMEs and source:
-// - Browse: anomalyco/browse (an MCP server and a Chromium extension).
-// - SSH and WSL: built-in desktop app extensions (anomalyco/opencode packages/gui-extensions).
+// Light product pages with copy from their READMEs and source. browse is a product, listed on
+// /product with the others and served at /browse. SSH and WSL, built-in desktop app extensions
+// (anomalyco/opencode packages/gui-extensions), were listed under /extensions.
 
 // SSH and WSL are left out for now, like Isocast in links.ts: to bring them back, restore "ssh" |
 // "wsl" here, uncomment their entries below and their pages in routes/extensions (now redirects).
@@ -20,7 +19,11 @@ type Extension = {
   features: { title: string; body: string }[]
   /** How to get it: a command to copy, or where to find it in the desktop app. */
   install: { lead: string; command?: string }
+  /** The Chrome Web Store listing, when there is one. The page's main action. */
+  store?: string
   source: string
+  /** Listed with the products on /product, at /<slug>, instead of under Extensions. */
+  product?: boolean
   /** For the page's structured data; every OS when left out. */
   operatingSystem?: string
 }
@@ -28,11 +31,11 @@ type Extension = {
 export const extensionPages: readonly Extension[] = [
   {
     slug: "browse",
-    name: "Browse",
+    name: "browse",
     body: "Let agents use your real browser.",
-    title: "OpenCode | Browse, your real browser for coding agents",
+    title: "OpenCode | browse, your real browser for coding agents",
     description:
-      "Browse lets OpenCode and other MCP clients use your real browser. Agents drive background tabs with Playwright and hand logins and 2FA back to you.",
+      "browse lets OpenCode and other MCP clients use your real browser. Agents drive background tabs with Playwright and hand logins and 2FA back to you.",
     intro:
       "An MCP server and a Chromium extension that let your agents use your real browser, with your tabs, your logins and your extensions. They open and drive tabs with Playwright, take screenshots and record the screen, in background tabs grouped out of your way. When it's your turn, for a login, a 2FA prompt or a payment, they hand the tab back to you and continue once you click Continue.",
     features: [
@@ -46,9 +49,11 @@ export const extensionPages: readonly Extension[] = [
       { title: "Allowlists", body: "Limit a session's tabs to the sites you name." },
     ],
     install: {
-      lead: "Run this once. It adds the browse MCP server to the agents you choose and pairs the extension from the Chrome Web Store. Needs Node.js 22.19 or newer.",
-      command: "npx @opencode/browse install",
+      lead: "One line installs browse, adds it to the agents it finds and pairs the extension. On Windows, run irm https://opencode.ai/browse/install.ps1 | iex. Or ask your agent to set it up.",
+      command: "curl -fsSL https://opencode.ai/browse/install | bash",
     },
+    store: "https://chromewebstore.google.com/detail/mfnicocicmmlkpjnaffgihfjhdgjkdjg",
+    product: true,
     source: "https://github.com/anomalyco/browse",
   },
   // {

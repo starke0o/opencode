@@ -267,9 +267,9 @@ export const content = {
   extensions: {
     browse: {
       body: "Lad agenter bruge din rigtige browser.",
-      title: "OpenCode | Browse, din rigtige browser til kodningsagenter",
+      title: "OpenCode | browse, din rigtige browser til kodningsagenter",
       description:
-        "Browse lader OpenCode og andre MCP-klienter bruge din rigtige browser. Agenter styrer faner i baggrunden med Playwright og giver logins og 2FA tilbage til dig.",
+        "browse lader OpenCode og andre MCP-klienter bruge din rigtige browser. Agenter styrer faner i baggrunden med Playwright og giver logins og 2FA tilbage til dig.",
       intro:
         "En MCP-server og en Chromium-udvidelse, der lader dine agenter bruge din rigtige browser med dine faner, logins og udvidelser. De åbner og styrer faner med Playwright, tager skærmbilleder og optager skærmen i baggrundsfaner, der er samlet i grupper og ude af vejen. Når det er din tur, for et login, en 2FA-prompt eller en betaling, giver de fanen tilbage til dig og fortsætter, når du klikker på Continue.",
       features: {
@@ -298,7 +298,7 @@ export const content = {
         allowlists: { title: "Hvidlister", body: "Begræns en sessions faner til de sites, du angiver." },
       },
       install:
-        "Kør dette én gang. Det tilføjer browse-MCP-serveren til de agenter, du vælger, og parrer udvidelsen fra Chrome Web Store. Kræver Node.js 22.19 eller nyere.",
+        "Én linje installerer browse, tilføjer det til de agenter den finder, og parrer udvidelsen. På Windows skal du køre irm https://opencode.ai/browse/install.ps1 | iex. Eller bed din agent om at sætte det op.",
     },
   },
   apps: {

@@ -297,9 +297,9 @@ export const content = {
   extensions: {
     browse: {
       body: "Lass Agents deinen echten Browser nutzen.",
-      title: "OpenCode | Browse, dein echter Browser für Coding-Agents",
+      title: "OpenCode | browse, dein echter Browser für Coding-Agents",
       description:
-        "Mit Browse nutzen OpenCode und andere MCP-Clients deinen echten Browser. Agents steuern Tabs im Hintergrund mit Playwright und geben Logins und 2FA an dich zurück.",
+        "Mit browse nutzen OpenCode und andere MCP-Clients deinen echten Browser. Agents steuern Tabs im Hintergrund mit Playwright und geben Logins und 2FA an dich zurück.",
       intro:
         "Ein MCP-Server und eine Chromium-Extension, mit denen deine Agents deinen echten Browser nutzen, mit deinen Tabs, Logins und Extensions. Sie öffnen und steuern Tabs mit Playwright, machen Screenshots und Bildschirmaufnahmen, in Hintergrund-Tabs, die gruppiert und dir aus dem Weg sind. Bist du dran, etwa für einen Login, eine 2FA-Abfrage oder eine Zahlung, geben sie dir den Tab zurück und machen weiter, sobald du auf Continue klickst.",
       features: {
@@ -331,7 +331,7 @@ export const content = {
         allowlists: { title: "Allowlists", body: "Beschränke die Tabs einer Session auf die Websites, die du nennst." },
       },
       install:
-        "Einmal ausführen. Das fügt den browse-MCP-Server zu den Agents deiner Wahl hinzu und koppelt die Extension aus dem Chrome Web Store. Benötigt Node.js 22.19 oder neuer.",
+        "Eine Zeile installiert browse, fügt es den gefundenen Agents hinzu und koppelt die Extension. Unter Windows führst du irm https://opencode.ai/browse/install.ps1 | iex aus. Oder bitte deinen Agent, es einzurichten.",
     },
   },
   apps: {

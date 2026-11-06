@@ -264,9 +264,9 @@ export const content = {
   extensions: {
     browse: {
       body: "La agenter bruke den ekte nettleseren din.",
-      title: "OpenCode | Browse, den ekte nettleseren din for kodeagenter",
+      title: "OpenCode | browse, den ekte nettleseren din for kodeagenter",
       description:
-        "Browse lar OpenCode og andre MCP-klienter bruke den ekte nettleseren din. Agenter styrer faner i bakgrunnen med Playwright og gir innlogging og 2FA tilbake til deg.",
+        "browse lar OpenCode og andre MCP-klienter bruke den ekte nettleseren din. Agenter styrer faner i bakgrunnen med Playwright og gir innlogging og 2FA tilbake til deg.",
       intro:
         "En MCP-server og en Chromium-utvidelse som lar agentene dine bruke den ekte nettleseren din, med fanene, innloggingene og utvidelsene dine. De åpner og styrer faner med Playwright, tar skjermbilder og tar opp skjermen, i bakgrunnsfaner som er gruppert og ute av veien. Når det er din tur, for en innlogging, en 2FA-forespørsel eller en betaling, gir de fanen tilbake til deg og fortsetter når du klikker på Continue.",
       features: {
@@ -295,7 +295,7 @@ export const content = {
         allowlists: { title: "Hvitelister", body: "Begrens fanene til en sesjon til nettstedene du oppgir." },
       },
       install:
-        "Kjør dette én gang. Det legger til browse-MCP-serveren i agentene du velger, og kobler til utvidelsen fra Chrome Web Store. Krever Node.js 22.19 eller nyere.",
+        "Én linje installerer browse, legger det til i agentene den finner og kobler til utvidelsen. På Windows kjører du irm https://opencode.ai/browse/install.ps1 | iex. Eller be agenten din sette det opp.",
     },
   },
   apps: {

@@ -386,11 +386,11 @@ export const content = {
   },
   extensions: {
     browse: {
-      name: "Browse",
+      name: "browse",
       body: "Deixe agentes usarem seu navegador de verdade.",
-      title: "OpenCode | Browse, seu navegador real para agentes de programação",
+      title: "OpenCode | browse, seu navegador real para agentes de programação",
       description:
-        "Browse deixa o OpenCode e outros clientes MCP usarem seu navegador de verdade. Agentes controlam abas em segundo plano com Playwright e devolvem logins e 2FA a você.",
+        "browse deixa o OpenCode e outros clientes MCP usarem seu navegador de verdade. Agentes controlam abas em segundo plano com Playwright e devolvem logins e 2FA a você.",
       intro:
         "Um servidor MCP e uma extensão do Chromium que deixam seus agentes usarem seu navegador de verdade, com suas abas, seus logins e suas extensões. Eles abrem e controlam abas com Playwright, tiram capturas de tela e gravam a tela, em abas de segundo plano agrupadas fora do seu caminho. Quando é a sua vez, para um login, um código 2FA ou um pagamento, eles devolvem a aba a você e continuam quando você clica em Continue.",
       features: {
@@ -428,7 +428,7 @@ export const content = {
         },
       },
       install:
-        "Rode isto uma vez. Adiciona o servidor MCP browse aos agentes que você escolher e pareia a extensão da Chrome Web Store. Requer Node.js 22.19 ou mais recente.",
+        "Uma linha instala o browse, adiciona aos agentes que encontrar e pareia a extensão. No Windows, rode irm https://opencode.ai/browse/install.ps1 | iex. Ou peça ao seu agente para configurar.",
     },
   },
   apps: {

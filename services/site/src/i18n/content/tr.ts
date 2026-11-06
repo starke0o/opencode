@@ -386,11 +386,11 @@ export const content = {
   },
   extensions: {
     browse: {
-      name: "Browse",
+      name: "browse",
       body: "Ajanlar gerçek tarayıcınızı kullansın.",
-      title: "OpenCode | Browse, kodlama ajanları için gerçek tarayıcınız",
+      title: "OpenCode | browse, kodlama ajanları için gerçek tarayıcınız",
       description:
-        "Browse, OpenCode'un ve diğer MCP istemcilerinin gerçek tarayıcınızı kullanmasını sağlar. Ajanlar arka plan sekmelerini Playwright ile yönetir, girişleri ve 2FA'yı size bırakır.",
+        "browse, OpenCode'un ve diğer MCP istemcilerinin gerçek tarayıcınızı kullanmasını sağlar. Ajanlar arka plan sekmelerini Playwright ile yönetir, girişleri ve 2FA'yı size bırakır.",
       intro:
         "Ajanlarınızın gerçek tarayıcınızı, yani sekmelerinizi, oturum açmış hesaplarınızı ve eklentilerinizi kullanmasını sağlayan bir MCP sunucusu ve bir Chromium eklentisi. Sekmeleri Playwright ile açıp yönetir, ekran görüntüsü alır ve ekranı kaydederler. Bunu yolunuza çıkmayan, gruplanmış arka plan sekmelerinde yaparlar. Sıra size geldiğinde, örneğin bir giriş, 2FA istemi ya da ödeme için, sekmeyi size verirler ve siz Continue'ya tıklayınca devam ederler.",
       features: {
@@ -428,7 +428,7 @@ export const content = {
         },
       },
       install:
-        "Bunu bir kez çalıştırın. browse MCP sunucusunu seçtiğiniz ajanlara ekler ve eklentiyi Chrome Web Store'dan eşler. Node.js 22.19 ya da daha yenisi gerekir.",
+        "Tek satır browse'u kurar, bulduğu ajanlara ekler ve eklentiyle eşler. Windows'ta irm https://opencode.ai/browse/install.ps1 | iex komutunu çalıştırın. Ya da ajanınızdan kurmasını isteyin.",
     },
   },
   apps: {

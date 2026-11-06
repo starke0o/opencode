@@ -173,11 +173,11 @@ export const content = {
   },
   extensions: {
     browse: {
-      name: "Browse",
+      name: "browse",
       body: "讓代理使用你真正的瀏覽器。",
-      title: "OpenCode | Browse，為編碼代理準備的真正瀏覽器",
+      title: "OpenCode | browse，為編碼代理準備的真正瀏覽器",
       description:
-        "Browse 讓 OpenCode 和其他 MCP 用戶端使用你真正的瀏覽器。代理透過 Playwright 操作背景分頁，並把登入和雙重驗證交還給你。",
+        "browse 讓 OpenCode 和其他 MCP 用戶端使用你真正的瀏覽器。代理透過 Playwright 操作背景分頁，並把登入和雙重驗證交還給你。",
       intro:
         "一個 MCP 伺服器加上一個 Chromium 擴充功能，讓你的代理使用真正的瀏覽器，包括你的分頁、登入狀態和擴充功能。代理透過 Playwright 開啟並操作分頁、擷取螢幕畫面和錄製螢幕，這些分頁都在背景分組，不會打擾你。輪到你操作時，例如登入、雙重驗證或付款，代理會把分頁交還給你，你按下「繼續」後它再接著工作。",
       features: {
@@ -197,7 +197,7 @@ export const content = {
         allowlists: { title: "允許清單", body: "將工作階段的分頁限制在你指定的網站內。" },
       },
       install:
-        "只需執行一次。它會把 browse MCP 伺服器加入你選擇的代理，並從 Chrome 線上應用程式商店配對擴充功能。需要 Node.js 22.19 或更新版本。",
+        "一行指令安裝 browse，將它加入找到的代理並配對擴充功能。在 Windows 上執行 irm https://opencode.ai/browse/install.ps1 | iex。也可以請代理幫你設定。",
     },
   },
   apps: {

@@ -219,11 +219,11 @@ export const content = {
   },
   extensions: {
     browse: {
-      name: "Browse",
+      name: "browse",
       body: "에이전트가 실제 브라우저를 쓰게 하세요.",
-      title: "OpenCode | Browse, 코딩 에이전트를 위한 실제 브라우저",
+      title: "OpenCode | browse, 코딩 에이전트를 위한 실제 브라우저",
       description:
-        "Browse는 OpenCode와 다른 MCP 클라이언트가 실제 브라우저를 쓰게 합니다. 에이전트는 Playwright로 백그라운드 탭을 조작하고, 로그인과 2FA는 사용자에게 넘깁니다.",
+        "browse는 OpenCode와 다른 MCP 클라이언트가 실제 브라우저를 쓰게 합니다. 에이전트는 Playwright로 백그라운드 탭을 조작하고, 로그인과 2FA는 사용자에게 넘깁니다.",
       intro:
         "MCP 서버와 Chromium 확장 프로그램으로, 에이전트가 내 탭, 내 로그인, 내 확장 프로그램이 있는 실제 브라우저를 쓰게 합니다. 에이전트는 Playwright로 탭을 열고 조작하며, 스크린샷을 찍고 화면을 녹화합니다. 이 탭들은 방해되지 않게 백그라운드에서 그룹으로 묶입니다. 로그인, 2FA, 결제처럼 내가 직접 해야 할 때가 오면 탭을 넘겨주고, 내가 계속을 클릭하면 다시 이어 갑니다.",
       features: {
@@ -243,7 +243,7 @@ export const content = {
         allowlists: { title: "허용 목록", body: "세션의 탭을 지정한 사이트로만 제한하세요." },
       },
       install:
-        "한 번만 실행하세요. 선택한 에이전트에 browse MCP 서버를 추가하고, Chrome 웹 스토어의 확장 프로그램과 페어링합니다. Node.js 22.19 이상이 필요합니다.",
+        "한 줄로 browse를 설치하고, 찾은 에이전트에 추가하고 확장 프로그램과 페어링합니다. Windows에서는 irm https://opencode.ai/browse/install.ps1 | iex 를 실행하세요. 에이전트에게 설정을 맡겨도 됩니다.",
     },
   },
   apps: {

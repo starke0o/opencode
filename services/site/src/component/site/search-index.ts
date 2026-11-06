@@ -112,9 +112,9 @@ export function buildSearchIndex(
     })),
     ...extensionPages.map((extension) => ({
       title: content.extensions[extension.slug].name,
-      path: `/extensions/${extension.slug}`,
+      path: extension.product ? `/${extension.slug}` : `/extensions/${extension.slug}`,
       body: `${content.extensions[extension.slug].body} ${content.extensions[extension.slug].intro}`,
-      keywords: "extension",
+      keywords: extension.product ? "product" : "extension",
     })),
     { title: t("nav.changelog"), path: "/changelog", keywords: "releases versions what's new" },
     { title: names.brand, path: "/brand", body: brand.hero.body, keywords: "logo wordmark assets" },

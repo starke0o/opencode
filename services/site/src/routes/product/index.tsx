@@ -30,6 +30,8 @@ export default function Product() {
   const language = useLanguage()
   const i18n = useI18n()
   const extensionCopy = useArea("extensions", extensionsSource)
+  const productLandingPages = () => extensionPages.filter((extension) => extension.product)
+  const extensionPagesListed = () => extensionPages.filter((extension) => !extension.product)
   const title = () => i18n.t("product.title")
   const description = () => i18n.t("product.meta.description")
   const download = () => localize(language.locale(), "download", downloadContent(i18n.t, language.route))
@@ -68,14 +70,31 @@ export default function Product() {
       {/* Right after the grid, so a saved order (Design mode, development only) applies before it paints. */}
       {import.meta.env.DEV && <script innerHTML={productsOrderScript} />}
 
-      {/* Hidden while extensionPages is empty. */}
-      <Show when={extensionPages.length > 0}>
+      {/* Products with a light page of their own, listed after the grid. */}
+      <Show when={productLandingPages().length > 0}>
+        <section data-component="block" data-slot="products-more" data-section="more-products">
+          <SectionHeading id="more-products" title={i18n.t("site.moreProducts")} label />
+          <div data-slot="body">
+            <ProductList
+              items={productLandingPages().map((extension) => ({
+                name: extensionCopy()[extension.slug].name,
+                description: extensionCopy()[extension.slug].body,
+                href: language.route(`/${extension.slug}`),
+                icon: <BrowseMark />,
+              }))}
+            />
+          </div>
+        </section>
+      </Show>
+
+      {/* Hidden while no extension is listed; SSH and WSL are commented out in extension-data.ts. */}
+      <Show when={extensionPagesListed().length > 0}>
         <section data-component="block" data-slot="products-extensions" data-section="extensions">
           <SectionHeading id="extensions" title={i18n.t("site.extensions")} label />
           <div data-slot="body">
             {/* Each extension's page, with its install steps; a blank tile until one has an icon. */}
             <ProductList
-              items={extensionPages.map((extension) => ({
+              items={extensionPagesListed().map((extension) => ({
                 name: extensionCopy()[extension.slug].name,
                 description: extensionCopy()[extension.slug].body,
                 href: language.route(`/extensions/${extension.slug}`),

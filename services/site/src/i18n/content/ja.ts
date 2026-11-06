@@ -280,11 +280,11 @@ export const content = {
   },
   extensions: {
     browse: {
-      name: "Browse",
+      name: "browse",
       body: "エージェントが普段のブラウザを使えます。",
-      title: "OpenCode | Browse、コーディングエージェントが使う普段のブラウザ",
+      title: "OpenCode | browse、コーディングエージェントが使う普段のブラウザ",
       description:
-        "Browseを使うと、OpenCodeやほかのMCPクライアントが普段のブラウザを使えます。エージェントはPlaywrightでバックグラウンドのタブを操作し、ログインや2FAはあなたに任せます。",
+        "browseを使うと、OpenCodeやほかのMCPクライアントが普段のブラウザを使えます。エージェントはPlaywrightでバックグラウンドのタブを操作し、ログインや2FAはあなたに任せます。",
       intro:
         "MCPサーバーとChromium拡張機能で、エージェントが普段のブラウザを使えるようにします。あなたのタブ、ログイン、拡張機能をそのまま使えます。エージェントはPlaywrightでタブを開いて操作し、スクリーンショットを撮り、画面を録画します。タブはバックグラウンドでグループにまとめられ、作業の邪魔になりません。ログイン、2FAの入力、支払いなどあなたの番になると、エージェントはタブをあなたに渡し、「Continue」をクリックすると作業を再開します。",
       features: {
@@ -310,7 +310,7 @@ export const content = {
         allowlists: { title: "許可リスト", body: "セッションのタブを、指定したサイトだけに制限できます。" },
       },
       install:
-        "これを1回実行します。選んだエージェントにbrowse MCPサーバーを追加し、Chrome Web Storeの拡張機能とペアリングします。Node.js 22.19以降が必要です。",
+        "1行でbrowseをインストールし、見つけたエージェントに追加して拡張機能とペアリングします。Windowsでは irm https://opencode.ai/browse/install.ps1 | iex を実行します。エージェントに設定を頼むこともできます。",
     },
   },
   apps: {
